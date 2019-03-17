@@ -6,6 +6,7 @@ import 'graphiql/graphiql.css'
 import {pure} from 'recompose';
 import {AppBar, Tabs, Tab, Toolbar, Typography} from '@material-ui/core'
 import * as actions from './state/actions';
+import {ChatView} from './components/ChatView';
 
 import {appStateStore} from './state/AppState';
 
@@ -29,7 +30,7 @@ export const App = pure(({appState}) => {
   const index = ['chat', 'graphiql'].indexOf(appState.get('selectedTab'));
   let tabContent;
   if(index === 0){
-    tabContent = <div></div>;
+    tabContent = <ChatView chatHistory={appState.get('chatHistory')} />;
   } else if(index === 1){
     tabContent = <GraphiQL fetcher={graphQLFetcher} />;
   } else {
