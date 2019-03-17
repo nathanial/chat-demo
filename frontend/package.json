@@ -1,0 +1,25 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "apollo-boost": "^0.3.1",
+    "graphiql": "^0.13.0",
+    "graphql": "^14.1.1",
+    "graphql-tag": "^2.10.1",
+    "immutable": "^4.0.0-rc.12",
+    "isomorphic-fetch": "^2.2.1",
+    "prop-types": ">=15.5.0",
+    "react": "^15.6.0 || ^16.0.0",
+    "react-dom": "^15.6.0 || ^16.0.0",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.5",
+    "redux-promise": "^0.6.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
